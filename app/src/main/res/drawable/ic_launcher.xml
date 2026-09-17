@@ -4,16 +4,34 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Chỉ giữ hình loa, phóng to 2.4 lần và canh giữa khung 108x108 -->
     <group
-        android:pivotX="21"
+        android:pivotX="30"
         android:pivotY="24"
-        android:scaleX="2.0"
-        android:scaleY="2.0"
-        android:translateX="33"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        android:translateX="24"
         android:translateY="30">
+
+        <!-- Khối loa (giữ nguyên, tô đặc) -->
         <path
             android:fillColor="#0057CB"
             android:pathData="M14,20 L14,28 L20,28 L28,36 L28,12 L20,20 Z" />
+
+        <!-- Vòng cung âm thanh nhỏ - nét vẽ, đầu bo tròn (mềm, không nhọn) -->
+        <path
+            android:strokeColor="#0057CB"
+            android:strokeWidth="3"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M31,18 A6,6 0 0 1 31,30" />
+
+        <!-- Vòng cung âm thanh lớn - nét vẽ, đầu bo tròn -->
+        <path
+            android:strokeColor="#0057CB"
+            android:strokeWidth="3"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M34,12 A12,12 0 0 1 34,36" />
+
     </group>
 </vector>
