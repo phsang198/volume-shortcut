@@ -4,14 +4,13 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Bọc icon gốc (thiết kế 48x48) vào khung 108x108 chuẩn adaptive icon,
-         phóng to 1.4 lần và dời vào chính giữa vùng an toàn -->
+    <!-- Chỉ giữ hình loa, phóng to 2.4 lần và canh giữa khung 108x108 -->
     <group
-        android:pivotX="28"
+        android:pivotX="21"
         android:pivotY="24"
-        android:scaleX="1.4"
-        android:scaleY="1.4"
-        android:translateX="26"
+        android:scaleX="2.4"
+        android:scaleY="2.4"
+        android:translateX="33"
         android:translateY="30">
         <path
             android:fillColor="#0057CB"
