@@ -4,34 +4,62 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <group
-        android:pivotX="30"
-        android:pivotY="24"
-        android:scaleX="1.8"
-        android:scaleY="1.8"
-        android:translateX="24"
-        android:translateY="30">
 
-        <!-- Khối loa (giữ nguyên, tô đặc) -->
-        <path
-            android:fillColor="#0057CB"
-            android:pathData="M14,20 L14,28 L20,28 L28,36 L28,12 L20,20 Z" />
+    <!--
+        SPEAKER BODY
+        Tỷ lệ mô phỏng bản AI:
+        - thân loa lớn
+        - phần đuôi vuông, bo góc nhẹ
+        - horn mở rộng sang phải
+    -->
+    <path
+        android:fillColor="#0057CB"
+        android:pathData="
+            M15,40
+            C15,37.5 17,35.5 19.5,35.5
+            L32.5,35.5
 
-        <!-- Vòng cung âm thanh nhỏ - nét vẽ, đầu bo tròn (mềm, không nhọn) -->
-        <path
-            android:strokeColor="#0057CB"
-            android:strokeWidth="3"
-            android:strokeLineCap="round"
-            android:fillColor="#00000000"
-            android:pathData="M31,18 A6,6 0 0 1 31,30" />
+            L53.5,18.5
+            C56.5,16 60.5,18.2 60.5,22
+            L60.5,86
 
-        <!-- Vòng cung âm thanh lớn - nét vẽ, đầu bo tròn -->
-        <path
-            android:strokeColor="#0057CB"
-            android:strokeWidth="3"
-            android:strokeLineCap="round"
-            android:fillColor="#00000000"
-            android:pathData="M34,12 A12,12 0 0 1 34,36" />
+            C60.5,89.8 56.5,92 53.5,89.5
+            L32.5,72.5
 
-    </group>
+            L19.5,72.5
+            C17,72.5 15,70.5 15,68
+            Z" />
+
+    <!--
+        SMALL SOUND WAVE
+        Cung dày, đầu tròn.
+    -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#0057CB"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="
+            M69,40
+            C77,47
+            77,61
+            69,68" />
+
+    <!--
+        LARGE SOUND WAVE
+        Cung lớn, cùng tỷ lệ với bản AI.
+    -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#0057CB"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="
+            M80,29
+            C94,40
+            98,68
+            80,79" />
+
 </vector>
