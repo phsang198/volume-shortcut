@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Volume</string>
+    <string name="power_service_desc">Bật lên để mở menu Tắt máy / Khởi động lại (thay thế nút nguồn vật lý). Tự tắt sau khi dùng.</string>
 </resources>
